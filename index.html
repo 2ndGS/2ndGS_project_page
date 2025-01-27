@@ -9,7 +9,7 @@
   <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image" content="static/images/teaser/teaser.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>3DGS2</title>
+  <link rel="icon" type="image/x-icon" href="static/images/icon.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -43,6 +43,15 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+      }
+    });
+  </script>
 </head>
 <body>
 
@@ -52,28 +61,35 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">3DGS<sup>2</sup>: Near Second-order Converging 3D Gaussian Splatting</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://lanlei.github.io" target="_blank">Lei Lan</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://tianjiashao.com/" target="_blank">Tianjia Shao</a><sup>2</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="https://zixuanvickylu.github.io" target="_blank">Zixuan Lu</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://yucrazing.github.io/resume/" target="_blank">Yu Zhang</a><sup>1</sup>,
+                   </span>
+                  <span class="author-block">
+                    <a href="https://www.math.ucla.edu/~cffjiang/" target="_blank">Chenfanfu Jiang</a><sup>3</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://yangzzzy.github.io/" target="_blank">Yin Yang</a><sup>1</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup> University of Utah, <sup>2</sup> Zhejiang University, <sup>3</sup> University of California, Los Angeles<br>2025, Jan</span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2501.13975" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -82,31 +98,9 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/abs/2501.13975" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -123,32 +117,20 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
+  <figure style="text-align: center;">
+    <img src="static/images/teaser/teaser.png" alt="" width="1200">
+    <figcaption></figcaption>
+  </figure>
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
+        <h2 class="title">Abstract</h2>
+        <div class="content has-text-left">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            3D Gaussian Splatting (3DGS) has emerged as a mainstream solution for novel view synthesis and 3D reconstruction. By explicitly encoding a 3D scene using a collection of Gaussian kernels, 3DGS achieves high-quality rendering with superior efficiency. As a learning-based approach, 3DGS training has been dealt with the standard stochastic gradient descent (SGD) method, which offers at most linear convergence. Consequently, training often requires tens of minutes, even with GPU acceleration. This paper introduces a (near) second-order convergent training algorithm for 3DGS, leveraging its unique properties. Our approach is inspired by two key observations. First, the attributes of a Gaussian kernel contribute independently to the image-space loss, which endorses isolated and local optimization algorithms. We exploit this by splitting the optimization at the level of individual kernel attributes, analytically constructing small-size Newton systems for each parameter group, and efficiently solving these systems on GPU threads. This achieves Newton-like convergence per training image without relying on the global Hessian. Second, kernels exhibit sparse and structured coupling across input images. This property allows us to effectively utilize spatial information to mitigate overshoot during stochastic training. Our method converges an order faster than standard GPU-based 3DGS training, requiring over $10 \times$ fewer iterations while maintaining or surpassing the quality of the compared with the SGD-based 3DGS reconstructions.
           </p>
         </div>
       </div>
@@ -165,32 +147,40 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
+        <img src="static/images/teaser/teaser.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle">
+          <br>
+          We show 3DGS training can be substantially improved by switching from stochastic gradient descent to stochastic Newton. A Gaussian kernel has multiple attributes, and optimizing all the attributes of all the kernels as a whole leads to a very high-dimensional nonlinear problem. We leverage the fact that kernel attributes are weakly coupled and design a local Newton scheme to find the optimal value of each type of kernel parameter. We also exploit the spatial relation among input images to effectively mitigate the overshoot issue in stochastic optimization. As a result, our method is $5\times $ to $10\times$ faster than gradient-based 3DGS training.
+        </h2>
+      </div>
+
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/vs_gs/vs_gs.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle">
+            <br>
+            Convergence curves of our method and 3DGS. We report a group of representative convergence plots using the proposed training method (local
+            Newton) and vanilla 3DGS training (GD).
+          </h2>
+        </div>
+
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/order/order.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle">
+          <br>
+          Training order of kernel attributes. We always train the kernel position before the color information (RGB and opacity).
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
+        <img src="static/images/KNN/knn.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle">
+          <br>
+          The plots show that SGD-based 3DGS training overshoots — we can see loss spikes after the training switches to a new image.
         </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
      </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
+
   </div>
 </div>
 </div>
@@ -198,87 +188,19 @@
 <!-- End image carousel -->
 
 
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@misc{lan20253dgs2nearsecondorderconverging,
+      title={3DGS$^2$: Near Second-order Converging 3D Gaussian Splatting},
+      author={Lei Lan and Tianjia Shao and Zixuan Lu and Yu Zhang and Chenfanfu Jiang and Yin Yang},
+      year={2025},
+      eprint={2501.13975},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2501.13975},
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
